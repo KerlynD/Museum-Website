@@ -1,3 +1,33 @@
+:root {
+    --primary-color: #131010;
+    --secondary-color: #543A14;
+    --background-color: #FFF0DC;
+    --text-color: #F0BB78;
+    --card-bg: #f8f9fa;
+    --border-color: #dee2e6;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Arial, sans-serif";
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
 /* Hero Section */
 header {
     position: relative;
@@ -119,4 +149,124 @@ section#contact p {
 
 .contact-form input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+/* Section Container */
+.section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+/* About Us Content */
+#about {
+    background: var(--background-color);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.about-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+.quick-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.quick-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--card-bg);
+    border-radius: 25px;
+    transition: transform var(--transition-speed);
+}
+
+.quick-info-item:hover {
+    transform: translateY(-2px);
+    color: var(--primary-color);
+}
+
+.quick-info-item i {
+    font-size: 1.4rem;
+}
+
+/* Gallery Styles */
+.gallery-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.gallery-item {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.gallery-btn {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.gallery-btn:hover img {
+    transform: scale(1.1);
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: var(--background-color);
+}
+
+.modal-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-body p {
+    padding: 1rem;
+    color: var(--primary-color);
 }
