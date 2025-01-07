@@ -1,0 +1,38 @@
+/* Hero Section */
+header {
+    position: relative;
+}
+
+.hero {
+    background-image: url('your-hero-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+}
