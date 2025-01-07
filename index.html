@@ -63,7 +63,7 @@
             <div class="modal-gallery">
                 <h2>Our Latest Exhibitions</h2>
                 <div class="gallery-content">
-                    <!-- Button trigger modal 1-->
+                    <!-- Modal 1 (keeping as is since it works) -->
                     <div class="gallery-item">
                         <button type="button" class="gallery-btn" data-bs-toggle="modal" data-bs-target="#modal1">
                             <img src="./assets/gallery_images/modal1image.jpg" alt="Exhibition 1">
@@ -71,7 +71,6 @@
                         </button>
                     </div>
                     
-                    <!-- Modal 1-->
                     <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
@@ -87,7 +86,7 @@
                         </div>
                     </div>
 
-                    <!-- Repeat for modals 2 and 3 with unique IDs -->
+                    <!-- Modal 2 -->
                     <div class="gallery-item">
                         <button type="button" class="gallery-btn" data-bs-toggle="modal" data-bs-target="#modal2">
                             <img src="./assets/gallery_images/modal2image.jpg" alt="Exhibition 2">
@@ -95,21 +94,42 @@
                         </button>
                     </div>
                     
-                    <!-- Modal 2-->
-                    <div class="modal fade" id="modal2" ...>
-                        // Similar structure as Modal 1 with updated IDs
+                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modal2Label">Exhibition 2</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./assets/gallery_images/modal2image.jpg" alt="Exhibition 2" class="modal-img">
+                                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- Modal 3 -->
                     <div class="gallery-item">
                         <button type="button" class="gallery-btn" data-bs-toggle="modal" data-bs-target="#modal3">
-                            <img src="./assets/gallery_images/model3image.jpg" alt="Exhibition 3">
+                            <img src="assets/gallery_images/model3image.jpg" alt="Exhibition 3">
                             <div class="gallery-overlay">Exhibition 3</div>
                         </button>
                     </div>
                     
-                    <!-- Modal 3-->
-                    <div class="modal fade" id="modal3" ...>
-                        // Similar structure as Modal 1 with updated IDs
+                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modal3Label">Exhibition 3</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="assets/gallery_images/model3image.jpg" alt="Exhibition 3" class="modal-img">
+                                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

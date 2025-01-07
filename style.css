@@ -1,13 +1,4 @@
-:root {
-    --primary-color: #131010;
-    --secondary-color: #543A14;
-    --background-color: #FFF0DC;
-    --text-color: #F0BB78;
-    --card-bg: #f8f9fa;
-    --border-color: #dee2e6;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --transition-speed: 0.3s;
-}
+
 
 /* Global styles */
 * {
@@ -34,17 +25,22 @@ header {
 }
 
 .hero {
-    background-image: url('assets/background_image/t-rex.jpg'); 
+    background-image: url('assets/background_image/t-rex.jpg');
     background-size: cover;
     background-position: center;
+    height: 100vh;
+    width: 100%;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
@@ -73,90 +69,106 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
+    align-items: center;
     list-style: none;
     margin: 0;
-    padding: 10px 0;
+    margin-left: 2rem;
 }
 
 nav a {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
+    font-weight: bold;
 }
 
-nav a:hover {
-    background-color: #444;
-    border-radius: 5px;
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
 }
 
 /* Contact Section */
 section#contact {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
     text-align: center;
+    padding: 60px 20px;
 }
 
 section#contact h2 {
-    margin-bottom: 10px;
-    font-size: 2em;
-    color: #333;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 section#contact p {
-    margin-bottom: 20px;
-    color: #555;
-    font-size: 1.1em;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
-    text-align: left;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--shadow-color);
 }
 
 .contact-form label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 15px 0 5px;
     font-weight: bold;
-    color: #333;
+    color: var(--primary-color);
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     font-size: 1em;
-    box-sizing: border-box;
 }
 
 .contact-form input[type="submit"] {
-    background-color: #007bff;
+    width: 100%;
+    background-color: var(--primary-color);
     color: white;
-    padding: 10px 20px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color var(--transition-speed);
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: var(--secondary-color);
 }
 
 /* Section Container */
 .section {
     min-height: 80vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 4rem 0;
+    justify-content: center;
+    padding: 4rem 10%;
 }
 
 /* About Us Content */
