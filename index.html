@@ -3,13 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museum Website</title>
+    <title>CS355 Museum</title>
+    <link rel="stylesheet" href="style.css">
 </head>
     <body>
         <!--Homepage Sections-->
+        <header>
+            <div class="hero">
+                <h1>Welcome to CS355 Museum</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
         <!--About Section-->
         <!--Gallery Section-->
         <!--Contact Section-->
+        <section id="contact" class="section bg-light">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out with any questions</p>
+            <form method="GET" action="mailto:kdelpe@gmail.com" class="contact-form" target="_blank">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" />
+
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" />
+
+                <input type="submit" value="Send Message" />
+            </form>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 CS355 Museum. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
         
     </body>
 </html>
